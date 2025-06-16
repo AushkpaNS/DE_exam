@@ -1,10 +1,11 @@
 ## Проект.  
 Решается задача построения базового пайплайна ETL процесса от получения данных до выгрузки результатов модели в облачное хранилище с помощью Apache Airflow и Python.  
 Пайплайн состоит из следующих шагов:  
-1. Извлечение данных: выгрузка данных по url https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data ;  
-2. Преобразование данных: проверка валидности данных, очистка и нормализация данных;  
-3. Обучение модели: обучение модели LogisticRegression, получение обченной модели и метрик Accuracy, Precision, Recall, F1;  
-4. Выгрузка рельтатов работы модели: загрузка данных на yandexDisk, с использованием api токена. Выгружаются предсказания модели и метрики;  
+1. Извлечение данных: выгрузка данных по url https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data
+Это известный учебный датасет Breast Cancer Wisconsin (Diagnostic) Data Set, подробное описание которого можно найти, например, тут: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data  ;
+3. Преобразование данных: проверка валидности данных, очистка и нормализация данных;  
+4. Обучение модели: обучение модели LogisticRegression, получение обченной модели и метрик Accuracy, Precision, Recall, F1;  
+5. Выгрузка рельтатов работы модели: загрузка данных на yandexDisk, с использованием api токена. Выгружаются предсказания модели и метрики;  
   
 ![](https://github.com/AushkpaNS/DE_exam/blob/master/images/pipeline.png)
   

@@ -1,0 +1,28 @@
+2025-06-16 04:47:03,575 INFO:EXTRACT_DATA.PY. Extract script started at 2025-06-16 04:47:03.575300
+2025-06-16 04:47:04,886 INFO:EXTRACT_DATA.PY. Data successfully extracted to: /home/airflow/results/extract/data_20250616_044704.csv
+2025-06-16 04:47:04,886 INFO:EXTRACT_DATA.PY. Extract script finished at 2025-06-16 04:47:04.886172
+2025-06-16 04:47:13,842 INFO:TRANSFORM_DATA.PY. Transform script started at 2025-06-16 04:47:13.842423
+2025-06-16 04:47:13,989 INFO:TRANSFORM_DATA.PY. Data successfully transformed and saved to data_20250616_044704.csv
+2025-06-16 04:47:13,989 INFO:TRANSFORM_DATA.PY. Transform script finished at 2025-06-16 04:47:13.989217
+2025-06-16 04:47:17,840 INFO:TRAIN_MODEL.PY. Train script started at 2025-06-16 04:47:17.840105
+2025-06-16 04:47:17,973 INFO:TRAIN_MODEL.PY. Data successfully trained and saved to model_data_20250616_044704.csv.pkl.
+2025-06-16 04:47:17,973 INFO:TRAIN_MODEL.PY. Training script finished at 2025-06-16 04:47:17.973587
+2025-06-16 04:47:19,961 INFO:MODEL_PRED.PY. Model pred script started at 2025-06-16 04:47:19.961578
+2025-06-16 04:47:19,999 INFO:MODEL_PRED.PY. Model pred script finished at 2025-06-16 04:47:19.999063
+2025-06-16 04:47:21,483 INFO:LOAD_DATA.PY. Load script started at 2025-06-16 04:47:21.483004
+2025-06-16 04:47:21,993 INFO:sending APIRequest GetOperationStatusRequest, GET https://cloud-api.yandex.net/v1/disk/operations/0000
+2025-06-16 04:47:22,158 INFO:sending APIRequest GetMetaRequest, GET https://cloud-api.yandex.net/v1/disk/resources
+2025-06-16 04:47:22,552 INFO:sending APIRequest GetUploadLinkRequest, GET https://cloud-api.yandex.net/v1/disk/resources/upload
+2025-06-16 04:47:23,007 INFO:uploading file to /id_exam/metrics_data_20250616_044704.csv.json at https://uploader18j.disk.yandex.net:443/upload-target/20250616T074722.955.utd.7wzyaaxdi3oiugr8smnld4dl6-k18j.20703139
+2025-06-16 04:47:23,453 INFO:LOAD_DATA.PY. Moved to yadisk: metrics_data_20250616_044704.csv.json to /id_exam/metrics_data_20250616_044704.csv.json
+2025-06-16 04:47:23,454 INFO:sending APIRequest GetOperationStatusRequest, GET https://cloud-api.yandex.net/v1/disk/operations/0000
+2025-06-16 04:47:23,552 INFO:sending APIRequest GetMetaRequest, GET https://cloud-api.yandex.net/v1/disk/resources
+2025-06-16 04:47:24,122 INFO:sending APIRequest GetUploadLinkRequest, GET https://cloud-api.yandex.net/v1/disk/resources/upload
+2025-06-16 04:47:24,595 INFO:uploading file to /id_exam/data_20250616_044704.csv at https://uploader88sas.disk.yandex.net:443/upload-target/20250616T074724.550.utd.9z5e3bepb03lcm6i8gpjj9prw-k88sas.588670
+2025-06-16 04:47:25,087 INFO:LOAD_DATA.PY. Moved to yadisk: data_20250616_044704.csv to /id_exam/data_20250616_044704.csv
+2025-06-16 04:47:25,089 INFO:LOAD_DATA.PY. moved to archive: /home/airflow/results/extract/data_20250616_044704.csv to /home/airflow/results/archive/extract/data_20250616_044704.csv
+2025-06-16 04:47:25,089 INFO:LOAD_DATA.PY. moved to archive: /home/airflow/results/transform/data_20250616_044704.csv to /home/airflow/results/archive/transform/data_20250616_044704.csv
+2025-06-16 04:47:25,089 INFO:LOAD_DATA.PY. moved to archive: /home/airflow/results/model/model_data_20250616_044704.csv.pkl to /home/airflow/results/archive/model/model_data_20250616_044704.csv.pkl
+2025-06-16 04:47:25,090 INFO:LOAD_DATA.PY. moved to archive: /home/airflow/results/prediction/metrics_data_20250616_044704.csv.json to /home/airflow/results/archive/prediction/metrics_data_20250616_044704.csv.json
+2025-06-16 04:47:25,090 INFO:LOAD_DATA.PY. moved to archive: /home/airflow/results/prediction/data_20250616_044704.csv to /home/airflow/results/archive/prediction/data_20250616_044704.csv
+2025-06-16 04:47:25,090 INFO:LOAD_DATA.PY. Load script finished at 2025-06-16 04:47:25.090085

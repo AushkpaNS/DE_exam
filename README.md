@@ -6,7 +6,7 @@
 3. Обучение модели: обучение модели LogisticRegression, получение обченной модели и метрик Accuracy, Precision, Recall, F1;  
 4. Выгрузка рельтатов работы модели: загрузка данных на yandexDisk, с использованием api токена. Выгружаются предсказания модели и метрики;  
   
-![](https://github.com/AushkpaNS/DE_exam/blob/master/images/im1.png)
+![](https://github.com/AushkpaNS/DE_exam/blob/master/images/pipeline.png)
   
 **Структура репозитория:**  
 - /results/ - папка с промежуточными артефактами. Состоит из:  
@@ -43,7 +43,8 @@ YA_DISK_DEST_PATH = директория назначенив в yaDisk
 В YandexCloud была создана виртуальная машина.  
 На виртуальную машину был установлен python версии 3.8, mysqlclient версии 2.2.4, apache airflow версии 2.7.3.
 Управление dag осуществляется через веб-интерфейс apache airflow.
-
+![](https://github.com/AushkpaNS/DE_exam/blob/master/images/im1.png)
+![](https://github.com/AushkpaNS/DE_exam/blob/master/images/im2.png)
 
 **Ограничения релазиции**  
 Релазован только базовый пайплайн. Поэтому:  
@@ -66,3 +67,5 @@ YA_DISK_DEST_PATH = директория назначенив в yaDisk
 В скипте extract_data.py возникнет исключение, которое airflow воспримет как ошибку.  
 - Что произойдет, если модель не обучается или выдает ошибку?  
 В скипте train_model.py возникнет исключение, которое airflow воспримет как ошибку.  
+
+
